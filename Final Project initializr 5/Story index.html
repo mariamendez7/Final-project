@@ -46,6 +46,7 @@
             p {
               color: #413D3B;
               font-size: 16px;
+              padding-bottom: 15px;
             }
             .bg-primary {
               background-color: #FF5733;
@@ -91,8 +92,8 @@
             .pull-quote {
               color: #2E5A78;
               font-size: 25px;
-              margin-bottom: 15px;
-              margin-top: 15px;
+              margin-bottom: 20px;
+              margin-top: 5px;
               border-top: 2px dashed #ccd6e0;
               border-bottom: 2px dashed #ccd6e0;
               padding: 5px;
@@ -100,6 +101,9 @@
             .carousel-caption {
             font-size: 15px;
             }
+            .carousel-slide {
+            padding-top: 20px;
+            margin: 0 auto;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -134,7 +138,8 @@
     </div>
     <div class="left-column">
       <p><a class="byline" href="https://twitter.com/mellow_maria" target="_blank">By Maria Mendez</a></p>
-      <p class="editor-note">*Editor’s note: Some last names have been omitted out of respect for the privacy and safety of our sources.</p>
+      <p class="editor-note">*Editor’s note: Some last names have been omitted out of respect for the privacy and safety of our sources. Some quotes also appear in Spanish first.</p>
+
     </div>
     <div class="right-column">
       <div class="container" class="story-text">
@@ -149,11 +154,11 @@
           <div class="container">
           <div class="row">
             <div class="col-md-8">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div id="carousel-example-generic" id="carousel-1" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" id="carousel-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" id="carousel-1" data-slide-to="1"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -174,11 +179,11 @@
                 </div>
 
                 <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#carousel-example-generic" "carousel-1" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <a class="right carousel-control" href="#carousel-example-generic" "carousel-1" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
@@ -208,9 +213,9 @@
 
           <p>As an immigrant from Matamoros, Mexico, Yanelly previously worried about going to college. But when DACA was created in 2012, she allowed herself to imagine a future beyond the Rio Grande Valley.</p>
 
-          <p><a class="spanish-quotes">“Ella, su ilusión era estudiar alla,”</a>(Her dream was to study over there (UT Austin)), Juana says, leaning against the kitchen table with her arms around a chair.</p>
+          <p><a class="spanish-quotes">“Ella, su ilusión era estudiar alla,”</a> (Her dream was to study over there (UT Austin)), Juana says, leaning against the kitchen table with her arms around a chair.</p>
 
-          <p>She looks at Yanelly, sitting across from her on the living room couch, and adds, <a class="spanish-quotes">“Ella quería y quería estudiar alla”</a>(She really, really wanted to study over there.)</p>
+          <p>She looks at Yanelly, sitting across from her on the living room couch, and adds, <a class="spanish-quotes">“Ella quería y quería estudiar alla”</a> (She really, really wanted to study over there.)</p>
 
           <p>Yanelly looks down at the tile floor.</p>
 
@@ -226,8 +231,9 @@
 
           <p>While other UT students began signing apartment leases for the 2018-2019 academic year last September, Yanelly began a transfer student application to UT RGV. She also submitted a state financial aid application for UT-Austin and continued waiting for a solution from President Donald Trump or Congress.</p>
 
-          <p>As the months passed, Yanelly began discussing moving back home to Brownsville more seriously with her parents and older brother, whose DACA permit expires in 2019.
-          “Yo le decía a ella ‘yo me sacrifico de verte a tí para que estudias alla’” (I would tell her, ‘I would sacrifice not seeing you so you can study over there,’) Juana said, tearing up. “Pero ella me decía, ‘no yo quiero verte,’” (But she would tell me, ‘no, I want to see you.’)</p>
+          <p>As the months passed, Yanelly began discussing moving back home to Brownsville more seriously with her parents and older brother, whose DACA permit expires in 2019.</p>
+
+          <p><a class="spanish-quotes">“Yo le decía a ella ‘yo me sacrifico de verte a tí para que estudias alla’”</a> (I would tell her, ‘I would sacrifice not seeing you so you can study over there,’) Juana said, tearing up. <a class="spanish-quotes">“Pero ella me decía, ‘no yo quiero verte,’”</a> (But she would tell me, ‘no, I want to see you.’)</p>
 
           <p>By early December, there were no promising answers to the DACA riddle and Yanelly’s dilemma. Yanelly just knew she did not want to be stuck in Austin for four years, especially if something were to happen to her family.</p>
 
@@ -240,17 +246,26 @@
           <h2>Federal negotiations</h2>
 
           <p>As Yanelly debated whether to stay or leave UT-Austin, President Trump, congressmen and activists have also debated the future of the nearly 800,000 “DREAMers” in the U.S., including the estimated 124,000 in Texas.</p>
+
           <p>In October, President Trump said he would “love” to sign a DACA alternative in exchange for more border security and wall funding. But Yanelly and her family didn’t cross the U.S.–Mexico border illegally.</p>
 
           <p>Born in Matamoros, Mexico, on the other side of Brownsville, Texas, Yanelly travelled with her family to the U.S. with a tourist visa when she was just a year old. They traveled back and forth for a couple of years, but eventually made a life for themselves in Brownsville, where Yanelly started grade school. When their tourist visas began to expire, they were unable to apply for new ones because they were already living in the U.S. The last time Yanelly ever stepped foot in Mexico was in 2006.</p>
+
           <p>In Brownsville, Yanelly and her family have always had a close view of the border wall. They say they have seen people get around the wall, so they’re skeptical of Trump’s immigration strategy. But what bothers them is how Yanelly and other DREAMers have become bargaining chips for this strategy.</p>
+
           <p class="pull-quote">“We’re humans too,” Yanelly said. “We shouldn’t be something you have to negotiate. It’s our lives you’re messing with.”</p>
+
           <p>As DREAMers protest for a solution, both Republican and Democratic congressmen have introduced varying bills in search of a DACA alternative. One failed Republican bill called the SUCCEED Act created an eventual path to citizenship for DREAMers, but barred them from helping their parents gain legal status. Juana says she hopes Yanelly and her son gain legal status, even if it is at the expense of her own legalization. But Yanelly would not want this.</p>
+
           <p>“Her whole mindset is to help us,” Yanelly said. “But I think us, the kids, we want to help them too because they came here to give us a better life … So why not give them the ability to be here legally, work here legally and take away their worry? They worry too, not just for themselves, but for us too.”</p>
+
           <p>Earlier this month, a U.S. district court injunction gave DREAMers hope by blocking the Trump administration’s original decision and temporarily preventing the end of DACA as U.S. courts make a final decision.</p>
+
           <p>This court injunction opened a window for DACA renewals for students like Yanelly, who could not apply under President Trump’s rescindence order. But UT law professor Elissa Steglich said the federal government has the right to approve renewals at their discretion, and renewals are not guaranteed.</p>
+
           <p>Under the recent court injunction, Yanelly was able to submit her DACA renewal application last Friday, but she’s still waiting for a permanent solution.
           “It’s just still waiting to see what they do, like something official from the president, from Congress,” Yanelly said.</p>
+
           <h2>Finding new dreams</h2>
           <p>If her DACA renewal application is approved, Yanelly could safely remain at UT-Austin for at least two more years. But Yanelly still thinks she made the right decision for her and her family.</p>
           <p>“Overall, I don’t think I regret it because of the situation I was put in,” Yanelly said.</p>
@@ -262,11 +277,11 @@
           <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <div id="carousel-example-generic" id="carousel-2" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" id="carousel-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" id="carousel-2" data-slide-to="1"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -287,11 +302,11 @@
                 </div>
 
                 <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <a class="left carousel-control" href="#carousel-example-generic" "carousel-2" role="button" data-slide="prev">
                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <a class="right carousel-control" href="#carousel-example-generic" "carousel-2" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
